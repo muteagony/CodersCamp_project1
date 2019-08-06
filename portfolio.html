@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class= 'menu'>
-        <div class= 'box portfolio'>Portfolio</div>
-        <div class= 'box about'>About</div>
-        <div class= 'box contact'>Contact</div>
+        <div class= 'menu_box portfolio'>Portfolio</div>
+        <div class= 'menu_box about'>About</div>
+        <div class= 'menu_box contact'>Contact</div>
     </div>
     <div class= 'content'>
         <nav><a href='#h_p'><div class= 'arrow_box'>
@@ -17,14 +18,11 @@
         <div class= 'head' id='h_p'>Portfolio</div>
         <div class= 'covershape1'>
             <div class='portf_text' id='inz'>
-                Model precyzyjnego sterowania warunkami klimatycznymi uprawy roślin wymagających z wykorzystaniem Raspberry Pi jako mikrokontrolera.
-            </div>
+                Model for precise control of climatic conditions of demanding plants using Raspberry Pi as a microcontroller.</div>
             <div class='portf_text' id='inz_site'>
-                Aplikacja webowa składająca się z publicznej strony postawionej na serwerze Raspberry Pi oraz panelu administracyjnego umożliwiającego wprowadzanie zmian w bazie danych wykorzystująca framework Django. Szablon wykonany za pomocą HTML, CSS oraz elementów JavaScriptu.
-            </div>
+                Feedback loop control system consisting of web application and raspberry Pi with sensors and actuators controlling an enviromental conditions of a plant. Website is written using Django framework wih SQLlite database and is hosted on raspberry Pi. It allows user to control heat, humility and amount of sun the plant is getting and monitor environmental conditions of a plant in real-time.            </div>
             <div class='portf_text' id='app'>
-                Aplikacja mobilna dla systemu Android w wersji MVP przedstawia planer dnia z możliwością zapisu poszczególnych aktywności o konkretnej godzinie, widok główny przedstawia scrollowaną, wybieralną listę.
-            </div>
+                Mobile application for Android OS which allows user to assign activities to specific hours throught the day. Application is in prototype stage with core functionalities already developed.            </div>
             <div class= 'portf_img'>
             </div>
         </div>
@@ -45,19 +43,19 @@
                     <div class= 'img' id='tel_img'></div>
                     <div class= 'contact_text'>Tel</div>
                 </div>
-                <div class='cv contact_info'>
+                <a href='media/cv.pdf' target='blank'><div class='cv contact_info'>
                         <div class= 'img' id='cv_img'></div>
                         <div class= 'contact_text'>CV</div>
-                </div>
-                <div class='linkedin contact_info'>
+                </div></a>
+                <a href='https://pl.linkedin.com/' target='blank'><div class='linkedin contact_info'>
                         <div class= 'img' id='linkedin_img'></div>
-                        <div class= 'contact_text'>Linkedin</div>
-                </div>
-                <div class='fb contact_info'>
-                        <div class= 'img' id='fb_img'></div>
-                        <div class= 'contact_text'>Facebook</div>
-                </div>
-            </div>
+                        <div class= 'contact_text'>LinkedIn</div>
+                </div></a>
+                <a href='https://github.com/muteagony' target="blank"><div class='git contact_info'>
+                        <div class= 'img' id='git_img'></div>
+                        <div class= 'contact_text'>GitHub</div>
+                </div></a>
+            </a>
         </div>
         </div>
     </div>
