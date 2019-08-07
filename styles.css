@@ -3,6 +3,7 @@ html {
 }
 
 a{
+    color: inherit;
     text-decoration: none;
 }
 
@@ -466,7 +467,6 @@ a{
         font-size: 20px;
         font-weight: 100;
     }
-
     .menu {
         display: flex;
         justify-content: space-around;
@@ -487,15 +487,19 @@ a{
     .portfolio {
         padding: 20px;
         background-color: #161442;
+        color: white;
+        padding-bottom: 40px;
     }
 
     .portfolio:hover {
         background-color: #c45c00;
+        color: white;
     }
 
     .about {
         padding: 20px;
         background-color: #161442;
+        color: white;
     }
 
     .about:hover {
@@ -523,6 +527,7 @@ a{
         padding-top: 60px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-bottom: 20px;
         border-bottom: 10px solid #c45c00;
         background-image: url('media/6.jpg');
         background-repeat: no-repeat;
@@ -572,7 +577,8 @@ a{
         max-width: 445px;
         margin-right: auto;
         margin-left: auto;
-        padding: 70px 30px;
+        padding: 100px 30px;
+        padding-bottom: 400px;
         text-align: center;
         color: #161442;
         background-color: #76b39d;
@@ -583,7 +589,8 @@ a{
         max-width: 445px;
         margin-right: auto;
         margin-left: auto;
-        padding: 70px 30px;
+        padding: 100px 30px;
+        padding-bottom: 200px;
         text-align: center;
         color: #161442;
         background-color: #76b39d;
@@ -748,7 +755,8 @@ a{
         max-width: 445px;
         margin-right: auto;
         margin-left: auto;
-        padding: 70px 30px;
+        padding: 100px 30px;
+        padding-bottom: 200px;
         text-align: center;
         color: #161442;
         background-color: #76b39d;
