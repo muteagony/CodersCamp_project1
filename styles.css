@@ -6,335 +6,55 @@ a{
     text-decoration: none;
 }
 
-
-
 @media (min-width: 1115px) {
 
     body {
         position: static;
         margin: 0;
         font-family: 'Work Sans', sans-serif;
-        animation-name: bg;
+        animation-name: background_animation;
         animation-duration: 1s;
         animation-delay: 5s;
         animation-fill-mode: both;
     }
 
-    .menu {
-        display: flex;
-        font-size: 28px;
-        color: #f9f8eb;
-        justify-content: space-around;
-        text-align: center;
-        border-bottom: 5px solid f9f8eb;
-        background-color: #161442;
-        height: 11vh;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-
-    }
-
-    .content {
-        display: flex;
-        justify-content: center;
-        height: 89vh;
-    }
-
-    .covershape1 {  
-        width: 900px;
-        transform: skew(-30deg);
-        background: #f9f8eb;
-        position: relative;
-        margin-right: auto;
-        margin-top: 5vh;
-        animation-name: covering1;
-        animation-duration: 3s;
-        animation-delay: 3s;
-        animation-fill-mode: both;
-        animation-timing-function: ease-in-out;
-    }
-
-    .portf_text {
-        text-align: center;
-        transform: skew(30deg);
-        padding-top: 40px;
-        padding-left: 140px;
-        padding-right: 10px;
-        padding-left: 150px;
-        margin-left: 30px;
-        margin-right: 30px;
-        height: 60px;
-    }
-
-    #inz {
-         
-        animation-name: inz_a;
-        animation-duration: 23s;
-        animation-delay: 11s;
-        animation-fill-mode: both;
-        animation-iteration-count: infinite;
-    }
-
-    #inz_site {
-        animation-name: inz_s;
-        animation-duration: 23s;
-        animation-delay: 11s;
-        animation-fill-mode: both;
-        margin-top: -100px;
-        padding-bottom: 60px;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-    }
-
-    #app {
-        animation-name: app_a;
-        animation-duration: 23s;
-        animation-delay: 11s;
-        animation-fill-mode: both;
-        margin-top: -150px;
-        padding-bottom: 30px;
-        animation-iteration-count: infinite;
-    }
-
-    @keyframes inz_a {
+    @keyframes background_animation {
         0% {
-            display: block;
-        }
-
-        21% {
-            display: none;
-            opacity: 0;
-        }
-
-        85% {
-            display: none;
-            opacity: 0;
-        }
-
-        91% {
-            display: block;
-            opacity: 1;
+            background-image: url('media/6.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         100% {
-            display: block;
-            opacity: 1;
-        }
-    }
-
-    @keyframes inz_s {
-        0% {
-            display: none;
-            opacity: 0;
-        }
-
-        23% {
-            display: block;
-            opacity: 1;
-             
-        }
-
-        70% {
-            display: none;
-            opacity: 0;
-        }
-
-        100% {
-            display: none;
-            opacity: 0;
-        }
-    }
-
-    @keyframes app_a {
-        0% {
-            display: none;
-            opacity: 0;
-        }
-
-        50% {
-            display: none;
-            opacity: 0;
-        }
-
-        80% {
-            display: block;
-            opacity: 1;
-             
-        }
-
-        90% {
-            display: none;
-            opacity: 0;
-        }
-
-        100% {
-            display: none;
-            opacity: 0;
-        }
-    }
-
-    .portf_img {
-        height: 250px;
-        width: 250px;
-        border-radius: 50%;
-        border: 5px solid #c45c00;
-        background-image: url('media/portfolio1.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-left: 310px;
-        margin-right: auto;
-        margin-top: 30px;
-        transform: skew(30deg);
-        animation-name: img_portf;
-        animation-duration: 23s;
-        animation-delay: 11s;
-        animation-fill-mode: both;
-        animation-iteration-count: infinite;
-    }
-
-    @keyframes img_portf {
-        0% {
-            background-image: url('media/portfolio1.jpg');
-        }
-
-        19% {
-            background-image: url('media/portfolio2.jpg');
-        }
-
-        60% {
-            background-image: url('media/portfolio2.jpg');
-        }
-
-        65% {
-            background-image: url('media/portfolio3.png');
-        }
-
-        85% {
-            background-image: url('media/portfolio3.png');
-        }
-
-        90% {
-            background-image: url('media/portfolio1.jpg');
-        }
-
-        100% {
-            background-image: url('media/portfolio1.jpg');
-        }
-    }
-
-    @keyframes covering1 {
-        0% {
-            left: -1300px;
-            background: transparent
-        }
-
-        100% {
-            left: -280px;
-            background: #f9f8eb
-        }
-    }
-
-    @keyframes portolio-content {
-        0% {
-            display: none;
-        }
-
-        100% {
-            display: block;
-        }
-    }
-
-
-    .covershape2 {
-        margin-top: auto;
-        margin-bottom: auto;
-        border-top: 549px solid #c45c00;
-        border-left: 200px solid transparent;
-        border-right: 0px solid transparent;
-        width: 100px;
-        float: right;
-        animation-name: covering2;
-        animation-duration: 3s;
-        animation-delay: 3s;
-        animation-fill-mode: both;
-    }
-
-
-    @keyframes covering2 {
-        0% {
-            width: 0;
-            border-top: 549px solid transparent;
-        }
-
-        100% {
-            width: 30%;
-            border-top: 549px solid #c45c00;
-        }
-
-    }
-
-    .menu_box {
-        flex: 1;
-    }
-
-    .text_about {
-        text-align: center;
-        background-color: transparent;
-        align-self: center;
-        position: fixed;
-        animation-name: textbg;
-        animation-duration: 2s;
-        animation-delay: 2s;
-        animation-fill-mode: forwards;
-    }
-
-    .text_about2 {
-        font-size: 18px;
-        font-weight: 200;
-        color: #f9f8eb;
-        text-align: center;
-        background-color: transparent;
-        align-self: center;
-        max-width: 300px;
-        margin-left: -180px;
-        animation-name: appear;
-        animation-duration: 3s;
-        animation-delay: 6s;
-        animation-fill-mode: both;
-    }
-
-    @keyframes appear {
-        0% {
-            display: none;
-            opacity: 0;
-        }
-
-        100% {
-            display: block;
-            opacity: 1
-        }
-    }
-
-    @keyframes textbg {
-        0% {}
-        
-        100% {
-            color: transparent;
-            display: none;
-            opacity: 0;
-            
+            background-color: #76b39d
         }
     }
 
     h1 {
         color: #c45c00;
         font-size: 40px;
-
     }
 
     p {
         color: #f9f8eb;
         font-size: 20px;
         font-weight: 100;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 28px;
+        height: 11vh;
+        border-bottom: 5px solid f9f8eb;
+        color: #f9f8eb;
+        background-color: #161442;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .menu_box {
+        flex: 1;
     }
 
     .portfolio {
@@ -365,275 +85,79 @@ a{
         background-color: #76b39d;
     }
 
-    .contact_text {
-        color: #f9f8eb;
-         
-        padding-left: 10px;
-        font-size: 22px;
-    }
-
-    .text_name {
-        white-space: nowrap;
-        margin-top: -500px;
-        margin-right: 50px;
-        margin-left: 0px;
-        padding-bottom: 200px;
-        font-size: 40px;
-        color: #f9f8eb;
-        animation-name: ks;
-        animation-delay: 3s;
-        animation-duration: 3s;
-        animation-fill-mode: both;
-    }
-
-    @keyframes ks {
-        0% {
-            width: 0%;
-            display: none;
-            opacity: 0;
-            margin-left: 0px;
-        }
-
-        100% {
-            margin-left: -50px;
-        }
-    }
-
-    @keyframes icons {
-        0% {
-            width: 0%;
-            display: none;
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 0, 9;
-        }
-
-    }
-
-    .contact_info {
-        display: flex;
-        flex-direction: row;
-        padding: 5px;
-        margin-left: 120px;
-    }
-
-
-    .img {
-         
-        height: 26px;
-        width: 26px;
-        border-radius: 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        animation-name: icons;
-        animation-delay: 3s;
-        animation-duration: 3s;
-    }
-
-    #tel_img {
-        background-image: url("media/tel.jfif");
-    }
-
-    #cv_img {
-        background-image: url("media/cv.png");
-    }
-
-    #linkedin_img {
-        background-image: url("media/linkedin.png");
-    }
-
-    #git_img {
-        background-image: url("media/git.png");
-    }
-
-
-
-    @keyframes bg {
-        0% {
-            background-image: url('media/6.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        100% {
-            background-color: #76b39d
-        }
-    }
-
-    .head {
-        display: none;
-        opacity: 0;
-    }
-}
-
-@media (max-width: 1115px) {
-    .menu {
-        display: none;
-    }
-
     .content {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        height: 89vh;
     }
 
-    .text_about {
-        order: -1;
-        min-height: 450px;
-        background-image: url('media/6.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        text-align: center;
-        padding-top: 60px;
-        padding-left: 20px;
-        padding-right: 20px;
-        border-bottom: 10px solid #c45c00;
-    }
-
-    h1 {
-        color: #c45c00;
-        font-size: 40px;
-
-    }
-
-    h1:hover {
-        color: #76b39d;
-    }
-
-    p {
-        color: white;
-        font-size: 20px;
-        font-weight: 100;
-    }
-
-    .head {
-        background-color: #c45c00;
-        color: white;
-        text-align: center;
-        border-bottom: 5px solid #f9f8eb;
-        font-size: 30px;
-        padding: 30px;
-        margin-top: 100px;
+    .covershape_left {
+        position: relative;
         margin-right: auto;
-        margin-left: auto;
-        min-width: 445px;
-        max-width: 445px;
+        margin-top: 5vh;
+        width: 900px;
+        transform: skew(-30deg);
+        background: #f9f8eb;
+        animation-name: covershape_left_animation;
+        animation-duration: 3s;
+        animation-delay: 3s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
     }
 
-    .later {
-        margin-top: 0px;
+    @keyframes covershape_left_animation {
+        0% {
+            left: -1300px;
+            background: transparent
+        }
+
+        100% {
+            left: -280px;
+            background: #f9f8eb
+        }
     }
 
-    .text_about2 {
-        color: #161442;
-        background-color: #76b39d;
+    .portfolio_text {
+        height: 60px;
+        transform: skew(30deg);
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-top: 40px;
+        padding-left: 150px;
+        padding-right: 10px;
         text-align: center;
-        padding: 70px 30px;
-        margin-right: auto;
-        margin-left: auto;
-        min-width: 445px;
-        max-width: 445px;
-    }
-
-    .covershape2 {
-        color: #161442;
-        background-color: #76b39d;
-        text-align: center;
-        padding: 70px 30px;
-        margin-right: auto;
-        margin-left: auto;
-        min-width: 445px;
-        max-width: 445px;
-    }
-
-    .contact_text {
-        color: #161442;
-         
-        padding-left: 10px;
-        font-size: 22px;
-    }
-
-    .text_name {
-        font-size: 40px;
-        color: #161442;
-        margin-left: -100px;
-        padding-bottom: 50px;
-    }
-
-    .contact_info {
-        display: flex;
-        flex-direction: row;
-        padding: 5px;
-    }
-
-    .img {
-         
-        height: 26px;
-        width: 26px;
-        border-radius: 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    #tel_img {
-        background-image: url("media/tel.jfif");
-    }
-
-    #cv_img {
-        background-image: url("media/cv.png");
-    }
-
-    #linkedin_img {
-        background-image: url("media/linkedin.png");
-    }
-
-    #git_img {
-        background-image: url("media/git.png");
-    }
-
-    .covershape1 {
-        color: #161442;
-        background-color: #76b39d;
-        text-align: center;
-        padding: 70px 30px;
-        margin-right: auto;
-        margin-left: auto;
-        min-width: 445px;
-        max-width: 445px;
     }
 
     #inz {
-        animation-name: inz_a;
+        animation-name: inz_animation;
         animation-duration: 23s;
         animation-delay: 11s;
         animation-fill-mode: both;
-         
         animation-iteration-count: infinite;
     }
 
     #inz_site {
-        animation-name: inz_s;
+        margin-top: -100px;
+        padding-bottom: 60px;
+        animation-name: inz_site_animation;
         animation-duration: 23s;
         animation-delay: 11s;
         animation-fill-mode: both;
-        margin-top: -50px;
-        padding-bottom: 60px;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in;
     }
 
     #app {
-        animation-name: app_a;
+        margin-top: -150px;
+        padding-bottom: 30px;
+        animation-name: app_animation;
         animation-duration: 23s;
         animation-delay: 11s;
         animation-fill-mode: both;
-        margin-top: -150px;
-        padding-bottom: 30px;
         animation-iteration-count: infinite;
     }
 
-    @keyframes inz_a {
+    @keyframes inz_animation {
         0% {
             display: block;
         }
@@ -659,7 +183,7 @@ a{
         }
     }
 
-    @keyframes inz_s {
+    @keyframes inz_site_animation {
         0% {
             display: none;
             opacity: 0;
@@ -682,7 +206,7 @@ a{
         }
     }
 
-    @keyframes app_a {
+    @keyframes app_animation {
         0% {
             display: none;
             opacity: 0;
@@ -710,25 +234,26 @@ a{
         }
     }
 
-    .portf_img {
-        height: 200px;
-        width: 200px;
+    .portfolio_image {
+        height: 250px;
+        width: 250px;
+        margin-left: 310px;
+        margin-right: auto;
+        margin-top: 30px;
+        transform: skew(30deg);
         border-radius: 50%;
         border: 5px solid #c45c00;
         background-image: url('media/portfolio1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px;
-        animation-name: img_portf;
+        animation-name: portfolio_image_animation;
         animation-duration: 23s;
         animation-delay: 11s;
         animation-fill-mode: both;
         animation-iteration-count: infinite;
     }
 
-    @keyframes img_portf {
+    @keyframes portfolio_image_animation {
         0% {
             background-image: url('media/portfolio1.jpg');
         }
@@ -758,16 +283,251 @@ a{
         }
     }
 
-
-    .arrow {
-        border: solid #c45c00;
-        border-width: 0 3px 3px 0;
+    .text_about {
+        text-align: center;
+        background-color: transparent;
         align-self: center;
-        display: inline-block;
-        padding: 3px;
-        transform: rotate(45deg);
-        height: 10px;
-        width: 10px;
+        position: fixed;
+        animation-name: text_about_animation;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    .text_about2 {
+        font-size: 18px;
+        font-weight: 200;
+        color: #f9f8eb;
+        text-align: center;
+        background-color: transparent;
+        align-self: center;
+        max-width: 300px;
+        margin-left: -180px;
+        animation-name: text_about2_animation;
+        animation-duration: 3s;
+        animation-delay: 6s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes text_about_animation {
+        0% {}
+        
+        100% {
+            color: transparent;
+            display: none;
+            opacity: 0;
+        }
+    }
+
+    @keyframes text_about2_animation {
+        0% {
+            display: none;
+            opacity: 0;
+        }
+
+        100% {
+            display: block;
+            opacity: 1
+        }
+    }
+
+    .covershape_right {
+        width: 100px;
+        float: right;
+        margin-top: auto;
+        margin-bottom: auto;
+        border-top: 549px solid #c45c00;
+        border-left: 200px solid transparent;
+        border-right: 0px solid transparent;
+        animation-name: covershape_right_animation;
+        animation-duration: 3s;
+        animation-delay: 3s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes covershape_right_animation {
+        0% {
+            width: 0;
+            border-top: 549px solid transparent;
+        }
+
+        100% {
+            width: 30%;
+            border-top: 549px solid #c45c00;
+        }
+
+    }
+
+    .text_name {
+        white-space: nowrap;
+        margin-top: -500px;
+        margin-right: 50px;
+        margin-left: 0px;
+        padding-bottom: 200px;
+        font-size: 40px;
+        color: #f9f8eb;
+        animation-name: text_name_animation;
+        animation-delay: 3s;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes text_name_animation {
+        0% {
+            width: 0%;
+            display: none;
+            opacity: 0;
+            margin-left: 0px;
+        }
+
+        100% {
+            margin-left: -50px;
+        }
+    }
+
+    .contact_info {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        margin-left: 120px;
+    }
+
+    .contact_image {
+        height: 26px;
+        width: 26px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation-name: contact_image_animation;
+        animation-delay: 3s;
+        animation-duration: 3s;
+    }
+
+    @keyframes contact_image_animation {
+        0% {
+            width: 0%;
+            display: none;
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0, 9;
+        }
+    }
+
+    #tel_img {
+        background-image: url("media/tel.jfif");
+    }
+
+    #cv_img {
+        background-image: url("media/cv.png");
+    }
+
+    #linkedin_img {
+        background-image: url("media/linkedin.png");
+    }
+
+    #git_img {
+        background-image: url("media/git.png");
+    }
+
+    .contact_text {
+        color: #f9f8eb;
+        padding-left: 10px;
+        font-size: 22px;
+    }
+
+    .head {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1115px) {
+
+    body {
+        margin: 0;
+        font-family: 'Work Sans', sans-serif;
+        background-color: #161442;
+    }
+
+    h1 {
+        color: #c45c00;
+        font-size: 40px;
+
+    }
+
+    h1:hover {
+        color: #76b39d;
+    }
+
+    p {
+        color: white;
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        position: sticky;
+        font-size: 28px;
+        height: 11vh;
+        border-bottom: 5px solid f9f8eb;
+        color: #f9f8eb;
+        background-color: #161442;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .menu_box {
+        flex: 1;
+    }
+
+    .portfolio {
+        padding: 20px;
+        background-color: #161442;
+    }
+
+    .portfolio:hover {
+        background-color: #c45c00;
+    }
+
+    .about {
+        padding: 20px;
+        background-color: #161442;
+    }
+
+    .about:hover {
+        background-color: #f9f8eb;
+        color: #c45c00;
+    }
+
+    .contact {
+        padding: 20px;
+        background-color: #161442;
+    }
+
+    .contact:hover {
+        background-color: #76b39d;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text_about {
+        order: -1;
+        height: 450px;
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-bottom: 10px solid #c45c00;
+        background-image: url('media/6.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
     }
 
     .arrow_box {
@@ -778,9 +538,262 @@ a{
         background-color: #161442;
     }
 
-    body {
-        margin: 0;
-        font-family: 'Work Sans', sans-serif;
-        background-color: #161442;
+    .arrow {
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        transform: rotate(45deg);
+        align-self: center;
+        padding: 3px;
+        border: solid #c45c00;
+        border-width: 0 3px 3px 0;
+    }
+
+    .head {
+        margin-top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 30px;
+        min-width: 445px;
+        max-width: 445px;
+        text-align: center;
+        border-bottom: 5px solid #f9f8eb;
+        font-size: 30px;
+        background-color: #c45c00;
+        color: white;
+    }
+
+    .later {
+        margin-top: 0px;
+    }
+
+    .text_about2 {
+        min-width: 445px;
+        max-width: 445px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 70px 30px;
+        text-align: center;
+        color: #161442;
+        background-color: #76b39d;
+    }
+    
+    .covershape_left {
+        min-width: 445px;
+        max-width: 445px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 70px 30px;
+        text-align: center;
+        color: #161442;
+        background-color: #76b39d;
+    }
+
+    #inz {
+        animation-name: inz_animation;
+        animation-duration: 23s;
+        animation-delay: 11s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+    }
+
+    #inz_site {
+        animation-name: inz_site_animation;
+        animation-duration: 23s;
+        animation-delay: 11s;
+        animation-fill-mode: both;
+        margin-top: -50px;
+        padding-bottom: 60px;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+    }
+
+    #app {
+        animation-name: app_animation;
+        animation-duration: 23s;
+        animation-delay: 11s;
+        animation-fill-mode: both;
+        margin-top: -150px;
+        padding-bottom: 30px;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes inz_animation {
+        0% {
+            display: block;
+        }
+
+        21% {
+            display: none;
+            opacity: 0;
+        }
+
+        85% {
+            display: none;
+            opacity: 0;
+        }
+
+        91% {
+            display: block;
+            opacity: 1;
+        }
+
+        100% {
+            display: block;
+            opacity: 1;
+        }
+    }
+
+    @keyframes inz_site_animation {
+        0% {
+            display: none;
+            opacity: 0;
+        }
+
+        23% {
+            display: block;
+            opacity: 1;
+             
+        }
+
+        70% {
+            display: none;
+            opacity: 0;
+        }
+
+        100% {
+            display: none;
+            opacity: 0;
+        }
+    }
+
+    @keyframes app_animation {
+        0% {
+            display: none;
+            opacity: 0;
+        }
+
+        50% {
+            display: none;
+            opacity: 0;
+        }
+
+        80% {
+            display: block;
+            opacity: 1;
+             
+        }
+
+        90% {
+            display: none;
+            opacity: 0;
+        }
+
+        100% {
+            display: none;
+            opacity: 0;
+        }
+    }
+
+    .portfolio_image {
+        height: 200px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        border-radius: 50%;
+        border: 5px solid #c45c00;
+        background-image: url('media/portfolio1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation-name: portfolio_image_animation;
+        animation-duration: 23s;
+        animation-delay: 11s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes portfolio_image_animation {
+        0% {
+            background-image: url('media/portfolio1.jpg');
+        }
+
+        19% {
+            background-image: url('media/portfolio2.jpg');
+        }
+
+        60% {
+            background-image: url('media/portfolio2.jpg');
+        }
+
+        65% {
+            background-image: url('media/portfolio3.png');
+        }
+
+        85% {
+            background-image: url('media/portfolio3.png');
+        }
+
+        90% {
+            background-image: url('media/portfolio1.jpg');
+        }
+
+        100% {
+            background-image: url('media/portfolio1.jpg');
+        }
+    }
+
+    .covershape_right {
+        min-width: 445px;
+        max-width: 445px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 70px 30px;
+        text-align: center;
+        color: #161442;
+        background-color: #76b39d;
+    }
+
+    .text_name {
+        margin-left: -100px;
+        padding-bottom: 50px;
+        font-size: 40px;
+        color: #161442;
+    }
+
+    .contact_info {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+    }
+ 
+    .contact_image{
+        height: 26px;
+        width: 26px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #tel_img {
+        background-image: url("media/tel.jfif");
+    }
+
+    #cv_img {
+        background-image: url("media/cv.png");
+    }
+
+    #linkedin_img {
+        background-image: url("media/linkedin.png");
+    }
+
+    #git_img {
+        background-image: url("media/git.png");
+    }
+
+    .contact_text {
+        padding-left: 10px;
+        font-size: 22px;
+        color: #161442; 
     }
 }
